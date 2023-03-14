@@ -10,7 +10,18 @@ section {
   width: 800px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 3rem;
+  margin: 3rem;
+}
+
+.icon-holder {
+  border: 1px solid var(--off-border);
+  border-radius: var(--radius-base);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 0.5rem auto;
+  width: 3.5rem;
+  height: 3.5rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
