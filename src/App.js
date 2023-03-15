@@ -1,5 +1,6 @@
 import './App.css';
 import '@astrouxds/astro-web-components/dist/astro-web-components/astro-web-components.css';
+// eslint-disable-next-line no-unused-vars
 import { RuxIcon, RuxIconStar, RuxIconApps } from '@astrouxds/react';
 
 function App() {
