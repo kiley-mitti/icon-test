@@ -29,8 +29,7 @@ function App() {
           <span class='icon-holder'>
             <RuxIcon icon='apps' />
           </span>
-          <span>Satellite-receive is supposed to show here.</span>
-          <p>I think it has to do with treeshaking and the CRA in production doesn't realize that RuxIconSatelliteReceive is a dependency of RuxIcon with icon="satellite-receive"</p>
+          <span>Apps icon is supposed to show here.</span>
         </section>
       </header>
     </div>
