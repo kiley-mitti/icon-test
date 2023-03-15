@@ -1,6 +1,6 @@
 import './App.css';
 import '@astrouxds/astro-web-components/dist/astro-web-components/astro-web-components.css';
-import { RuxIcon, RuxIconStar } from '@astrouxds/react';
+import { RuxIcon, RuxIconStar, RuxIconApps } from '@astrouxds/react';
 
 function App() {
   return (
@@ -20,6 +20,14 @@ function App() {
           <p>However, if you only import RuxIcon, it won't show the icon you've actually chosen in production mode.</p>
           <span class='icon-holder'>
             <RuxIcon icon='satellite-receive' />
+          </span>
+          <span>Satellite-receive is supposed to show here.</span>
+          <p>I think it has to do with treeshaking and the CRA in production doesn't realize that RuxIconSatelliteReceive is a dependency of RuxIcon with icon="satellite-receive"</p>
+        </section>
+        <section>
+          <p>Here's a version where I import the specific icon RuxIconApps but never explicitly call it.</p>
+          <span class='icon-holder'>
+            <RuxIcon icon='apps' />
           </span>
           <span>Satellite-receive is supposed to show here.</span>
           <p>I think it has to do with treeshaking and the CRA in production doesn't realize that RuxIconSatelliteReceive is a dependency of RuxIcon with icon="satellite-receive"</p>
